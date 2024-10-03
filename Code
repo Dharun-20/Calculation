@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class MathCalculations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float firstInput = scanner.nextFloat();
+        int secondInput = scanner.nextInt();
+
+        int thirdInput = scanner.nextInt();
+
+        int fourthInput = scanner.nextInt();
+
+        // Calculations
+        int floorValue = (int) Math.floor(firstInput);
+        int ceilValue = (int) Math.ceil(firstInput);
+        int sqrtValue = (int) Math.sqrt(secondInput);
+        int powValue = (int) Math.pow(thirdInput, fourthInput);
+
+        // Output
+        System.out.println(floorValue);
+        System.out.println(ceilValue);
+        System.out.println(sqrtValue);
+        System.out.println(powValue);
+        
+        scanner.close();
+    }
+}
